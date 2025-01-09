@@ -1,9 +1,9 @@
 name: App With Github Actions with Docker CI/CD
 
 on:
-  workflow_dispatch
-  # push:
-  #   branches: [ "main" ]
+  #workflow_dispatch
+  push:
+    branches: [ "main" ]
 
 jobs:
   ci:
@@ -50,4 +50,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: ${{ secrets.DOCKERHUB_USERNAME }}/app-with-actions:latest
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/my-app:v2
