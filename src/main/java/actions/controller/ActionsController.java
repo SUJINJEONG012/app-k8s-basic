@@ -16,9 +16,14 @@ public class ActionsController {
 		return "Status - returned by Pod";
 	}
 
-	@GetMapping(value= "/api/status1")
+	@GetMapping(value= "/api/status2")
 	public String statusTest1(){	
 		return "Statsu - returned by Pod2";
 	}
+	@GetMapping(value= "/api/status3")
+	public String statusTest2(){	
+		return "Statsu - returned by Pod3";
+	}
+	
 
 }
